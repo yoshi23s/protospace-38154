@@ -8,8 +8,8 @@ class CommentsController < ApplicationController
     end
   end
 
- 
-
+  def show 
+    @comments = @prototype.comments.includes(:user)
 
   private
   def comment_params
