@@ -10,6 +10,7 @@ class CommentsController < ApplicationController
 
   def show 
     @comments = @prototype.comments.includes(:user)
+  end
 
 
   private
